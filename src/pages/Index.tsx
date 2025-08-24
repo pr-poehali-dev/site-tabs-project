@@ -80,14 +80,14 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <header className="border-b border-border bg-card">
-        <nav className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex space-x-8">
+        <nav className="container mx-auto px-6 py-6">
+          <div className="flex justify-center">
+            <div className="flex space-x-12">
               {navigationItems.map((item, index) => (
                 <button
                   key={index}
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
-                    item.active ? 'text-primary border-b-2 border-primary pb-1' : 'text-muted-foreground'
+                  className={`text-lg font-medium transition-colors hover:text-primary ${
+                    item.active ? 'text-primary border-b-2 border-primary pb-2' : 'text-muted-foreground'
                   }`}
                 >
                   {item.label}
@@ -97,8 +97,8 @@ const Index = () => {
           </div>
           
           {/* Logo in center */}
-          <div className="flex justify-center mt-4">
-            <div className="bg-primary text-primary-foreground px-6 py-2 rounded-lg font-semibold text-lg">
+          <div className="flex justify-center mt-6">
+            <div className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold text-xl">
               БЛАГОТВОРИТЕЛЬНЫЙ ФОНД
             </div>
           </div>
